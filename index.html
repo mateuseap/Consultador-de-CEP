@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Learning JQuery and Ajax</title>
+        <script type="text/javascript" src="JS/main.js"></script>
+        <script type="text/javascript" src="JS/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" style="margin-left:20px">Consultador de CEP</a>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="CEP" id="CEP" style="margin-right:20px">
+                <button class="btn btn-outline-success" onclick="consultarCEP()" style="margin-right:20px">Buscar</button>
+            </form>
+        </nav>
+
+        <div class="container" style="margin-top:20px">
+            <div class="row" style="margin-left:-19px">
+                <h4 id="titulo_cep">Dados sobre o CEP</h4>
+            </div>
+            <div class="row" style="margin-top:20px">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td>Logradouro</td>
+                            <td id="logradouro"></td>
+                        </tr>
+                        <tr>
+                            <td>Bairro</td>
+                            <td id="bairro"></td>
+                        </tr>
+                        <tr>
+                            <td>Localidade</td>
+                            <td id="localidade"></td>
+                        </tr>
+                        <tr>
+                            <td>UF</td>
+                            <td id="uf"></td>
+                        </tr>
+                        <tr>
+                            <td>DDD</td>
+                            <td id="ddd"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
